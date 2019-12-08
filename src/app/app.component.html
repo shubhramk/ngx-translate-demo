@@ -1,0 +1,12 @@
+<div class="header-module">
+  <app-header-component></app-header-component>
+</div>
+<div class="app-module">
+  <button (click)="useLanguage('en')">English</button>
+  <button (click)="useLanguage('de')">Dutch</button>
+  <h2>{{ 'app.text' | translate }}</h2>
+  <p>App Module</p>
+  <div class="lazyload-module">
+      <router-outlet></router-outlet>
+  </div>
+</div>
